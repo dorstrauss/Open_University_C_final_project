@@ -54,7 +54,8 @@ if there is error in the syntax of the beggining of the line the function will r
     i = 0;
     j = 0;
 
-	/*calling a function that put the arguments of the assemblly function in the mission array*/
+	/*calling a function that put the arguments of the assemblly function in 
+     mission array*/
 	/*if there is a syntax error the function returns 1 and we exit this function*/
     if (building_args(data, mission, & i, & j, words)) {
 
@@ -169,7 +170,7 @@ int check_label_and_functions(char data[MAX], char mission[MAX][MAX], int* i, in
 
             if (!temp) /*if the first word (after the lable if there is one) is not an allowed word in the assembly language*/
 			{
-                printf("the first word isn't allowed");
+                printf("\nthe first word isn't allowed");
                 return 1; /*returning an error code*/
             }
 
